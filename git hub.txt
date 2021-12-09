@@ -1,0 +1,178 @@
+Student@DESKTOP-8723UO5 MINGW64 ~/Desktop/gietworkshop (master)
+$ pwd
+/c/Users/Student/Desktop/gietworkshop
+
+Student@DESKTOP-8723UO5 MINGW64 ~/Desktop/gietworkshop (master)
+$ git init
+Initialized empty Git repository in C:/Users/Student/Desktop/gietworkshop/.git/
+
+Student@DESKTOP-8723UO5 MINGW64 ~/Desktop/gietworkshop (master)
+$ git add .
+
+Student@DESKTOP-8723UO5 MINGW64 ~/Desktop/gietworkshop (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   boxmodel.html
+        new file:   css units.html
+        new file:   flexbox.html
+        new file:   form.html
+        new file:   giet image.jpg
+        new file:   index.html
+        new file:   inline.html
+        new file:   list.html
+        new file:   main.html
+        new file:   mobile.html
+        new file:   relation.html
+        new file:   selector.html
+        new file:   style.css
+        new file:   table.html
+
+
+Student@DESKTOP-8723UO5 MINGW64 ~/Desktop/gietworkshop (master)
+$ git rm --cached inline.html
+rm 'inline.html'
+
+Student@DESKTOP-8723UO5 MINGW64 ~/Desktop/gietworkshop (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   boxmodel.html
+        new file:   css units.html
+        new file:   flexbox.html
+        new file:   form.html
+        new file:   giet image.jpg
+        new file:   index.html
+        new file:   list.html
+        new file:   main.html
+        new file:   mobile.html
+        new file:   relation.html
+        new file:   selector.html
+        new file:   style.css
+        new file:   table.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        inline.html
+
+
+Student@DESKTOP-8723UO5 MINGW64 ~/Desktop/gietworkshop (master)
+$ git rm --cached giet image.jpg main.html
+fatal: pathspec 'giet' did not match any files
+
+Student@DESKTOP-8723UO5 MINGW64 ~/Desktop/gietworkshop (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   boxmodel.html
+        new file:   css units.html
+        new file:   flexbox.html
+        new file:   form.html
+        new file:   giet image.jpg
+        new file:   index.html
+        new file:   list.html
+        new file:   main.html
+        new file:   mobile.html
+        new file:   relation.html
+        new file:   selector.html
+        new file:   style.css
+        new file:   table.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        inline.html
+
+
+Student@DESKTOP-8723UO5 MINGW64 ~/Desktop/gietworkshop (master)
+$ git config --global user.name "vasanthadigopula12"
+
+Student@DESKTOP-8723UO5 MINGW64 ~/Desktop/gietworkshop (master)
+$ git config --global user.email "vasanthadigopula@gmail.com"
+
+Student@DESKTOP-8723UO5 MINGW64 ~/Desktop/gietworkshop (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=vasanthadigopula12
+user.email=vasanthadigopula@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+Student@DESKTOP-8723UO5 MINGW64 ~/Desktop/gietworkshop (master)
+$ git commit -m "added html and css files"
+[master (root-commit) fa55ea1] added html and css files
+ 13 files changed, 419 insertions(+)
+ create mode 100644 boxmodel.html
+ create mode 100644 css units.html
+ create mode 100644 flexbox.html
+ create mode 100644 form.html
+ create mode 100644 giet image.jpg
+ create mode 100644 index.html
+ create mode 100644 list.html
+ create mode 100644 main.html
+ create mode 100644 mobile.html
+ create mode 100644 relation.html
+ create mode 100644 selector.html
+ create mode 100644 style.css
+ create mode 100644 table.html
+
+Student@DESKTOP-8723UO5 MINGW64 ~/Desktop/gietworkshop (master)
+$ git log
+commit fa55ea1245d7b3a1255e619ce511a93f09f9e313 (HEAD -> master)
+Author: vasanthadigopula12 <vasanthadigopula@gmail.com>
+Date:   Thu Dec 9 11:57:10 2021 +0530
+
+    added html and css files
+
+Student@DESKTOP-8723UO5 MINGW64 ~/Desktop/gietworkshop (master)
+$ git remote add origin https://github.com/vasanthadigopula12/htmlcssproject.git
+
+Student@DESKTOP-8723UO5 MINGW64 ~/Desktop/gietworkshop (master)
+$ git remote
+origin
+
+Student@DESKTOP-8723UO5 MINGW64 ~/Desktop/gietworkshop (master)
+$ git push origin master
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (15/15), 13.93 KiB | 2.79 MiB/s, done.
+Total 15 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/vasanthadigopula12/htmlcssproject.git
+ * [new branch]      master -> master
+
+Student@DESKTOP-8723UO5 MINGW64 ~/Desktop/gietworkshop (master)
+$ ^C
+
+Student@DESKTOP-8723UO5 MINGW64 ~/Desktop/gietworkshop (master)
+$
