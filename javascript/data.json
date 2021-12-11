@@ -1,0 +1,20 @@
+{"profile":[{
+"img":"men1.jpg",
+    "name":"vasanth",
+    "pin":"0501",
+    "branch":"CSE"
+
+    },
+{
+    "img":"men2.jpg",
+    "name":"sadik",
+    "pin":"0549",
+    "branch":"EEE"
+},
+{
+    "img":"men3.jpg",
+    "name":"tharun",
+    "pin":"4599",
+    "branch":"ECE"
+}]
+}
